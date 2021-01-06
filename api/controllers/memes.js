@@ -4,16 +4,18 @@ const mongoose = require('mongoose')
 exports.memes_get_all = (req, res, next) => {
     Meme.find().then((docs) => {
         res.status(200).json({
-            wiadomosc: 'Lista wszystkich produktow',
+            wiadomosc: 'Lista wszystkich memów',
             info: docs,
         })
     }).catch((err) => res.status(500).json({error: err}))
 }
 
 exports.meme_add = (req, res, next) => {
+    console.log(req.file);
     const meme = new Meme({
         _id: new mongoose.Types.ObjectId(),
         title: req.body.title,
+        tags: req.body.tags,
         memeImage: req.file.path
     })
     meme.save().then((doc) => {
@@ -37,7 +39,7 @@ exports.meme_get_one = (req, res, next) =>{
 exports.meme_update = (req, res, next) => {
     const id = req.params.memeId
     Meme.findByIdAndUpdate(
-        {title: req.body.title, tags: req.body.tags},
+        {title: req.body.title, tags: req.body.tags, memeImage: req.body.memeImage},
         {new: true}
     ).then((doc) => {
         res.status(200).json({

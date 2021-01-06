@@ -6,14 +6,14 @@ const memeSchema = mongoose.Schema({
         type: String,
         required: true,
     },
-    tags:{
+    tags: {
         type: String,
-        required: false,
+        required: true,
     },
-    memeImage:{
+    memeImage: {
         type: String,
         required: true,
     } 
 })
 
-module.exports = mongoose.model('Memes', memeSchema)
+module.exports = mongoose.model('Meme', memeSchema)

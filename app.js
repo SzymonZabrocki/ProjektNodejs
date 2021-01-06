@@ -13,10 +13,11 @@ app.use(morgan('combined'))
 
 app.use(bodyParser.json())
 
-const userRoutes = require(".api/routes/users")
-const memeRoutes = requie('./api/routes/memes')
+const memeRoutes = require('./api/routes/memes')
+const userRoutes = require('./api/routes/users')
 
 app.use('/memes', memeRoutes)
+
 app.use('/users', userRoutes)
 
 app.use((req, res, next) => {
