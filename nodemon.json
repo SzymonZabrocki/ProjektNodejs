@@ -1,6 +1,0 @@
-{
-    "env":{
-        "hasloJWT": "jwt",
-        "DBconnection": "mongodb+srv://SzymonZ:Projekcik123@cluster0.lykyd.mongodb.net/Projekt?retryWrites=true&w=majority"
-    }
-}
