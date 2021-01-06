@@ -1,0 +1,29 @@
+{
+  "name": "projektnodejs",
+  "version": "1.0.0",
+  "description": "Projekt Nodejs",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.10",
+    "morgan": "^1.10.0",
+    "node": "^15.4.0",
+    "nodemon": "^2.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SzymonZabrocki/ProjektNodejs.git"
+  },
+  "author": "Szymon Zabrocki, Stanisław Gardziewicz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SzymonZabrocki/ProjektNodejs/issues"
+  },
+  "homepage": "https://github.com/SzymonZabrocki/ProjektNodejs#readme"
+}
