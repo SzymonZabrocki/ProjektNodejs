@@ -2,6 +2,7 @@
 
 ## Opis projektu:
   ***Memownia*** to aplikacja pozwalająca internautom dzielić się zabawnymi obrazkami i gifami. W prosty można dodać śmieszny bądź ciekawy obrazek który następnie zostanie wyświetlony na stronie głównej. Można  przeglądać obrazki do woli po interesujących cię tytułach bądź tagach.
+  Zaimplementowana na serwerze jest również rejestracja oraz logowanie obsługujące autoryzację tokenami JWT.
   
   To repozytorium obejmuje backend aplikacji. Repozytorium frontendu aplikacji znajduje się w tym miejscu https://github.com/SzymonZabrocki/Frontend
 
