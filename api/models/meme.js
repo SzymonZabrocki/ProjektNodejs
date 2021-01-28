@@ -13,6 +13,9 @@ const memeSchema = mongoose.Schema({
     memeImage: {
         type: String,
         required: true,
+    },
+    rating:{
+        type: Number
     } 
 })
 
